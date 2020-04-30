@@ -13,7 +13,3 @@ struct DataManager: Codable {
     let price, changesPercentage, change, dayLow: Double
     let dayHigh, yearHigh, yearLow: Double
 }
-
-struct btcStruct: Codable {
-    let btcPriceFromDataManager: [DataManager]
-}

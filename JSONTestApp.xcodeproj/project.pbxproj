@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		11E3B56424545DD00016037F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3B56324545DD00016037F /* AppDelegate.swift */; };
 		11E3B56624545DD00016037F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3B56524545DD00016037F /* SceneDelegate.swift */; };
-		11E3B56824545DD00016037F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3B56724545DD00016037F /* ViewController.swift */; };
 		11E3B56B24545DD00016037F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E3B56924545DD00016037F /* Main.storyboard */; };
 		11E3B56D24545DD30016037F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E3B56C24545DD30016037F /* Assets.xcassets */; };
 		11E3B57024545DD30016037F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E3B56E24545DD30016037F /* LaunchScreen.storyboard */; };
+		11E3B57924545E5A0016037F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3B57824545E5A0016037F /* MainTableViewController.swift */; };
+		11E3B57B24545EA10016037F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3B57A24545EA10016037F /* DataManager.swift */; };
+		11E3B584245481600016037F /* AddButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3B583245481600016037F /* AddButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11E3B56024545DD00016037F /* JSONTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E3B56324545DD00016037F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E3B56524545DD00016037F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11E3B56724545DD00016037F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11E3B56A24545DD00016037F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11E3B56C24545DD30016037F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11E3B56F24545DD30016037F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11E3B57124545DD30016037F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E3B57824545E5A0016037F /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		11E3B57A24545EA10016037F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		11E3B583245481600016037F /* AddButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		11E3B56224545DD00016037F /* JSONTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				11E3B56924545DD00016037F /* Main.storyboard */,
+				11E3B57824545E5A0016037F /* MainTableViewController.swift */,
+				11E3B583245481600016037F /* AddButtonViewController.swift */,
+				11E3B580245464750016037F /* Manager */,
+				11E3B57724545E060016037F /* Other */,
+			);
+			path = JSONTestApp;
+			sourceTree = "<group>";
+		};
+		11E3B57724545E060016037F /* Other */ = {
+			isa = PBXGroup;
+			children = (
 				11E3B56324545DD00016037F /* AppDelegate.swift */,
 				11E3B56524545DD00016037F /* SceneDelegate.swift */,
-				11E3B56724545DD00016037F /* ViewController.swift */,
-				11E3B56924545DD00016037F /* Main.storyboard */,
 				11E3B56C24545DD30016037F /* Assets.xcassets */,
 				11E3B56E24545DD30016037F /* LaunchScreen.storyboard */,
 				11E3B57124545DD30016037F /* Info.plist */,
 			);
-			path = JSONTestApp;
+			path = Other;
+			sourceTree = "<group>";
+		};
+		11E3B580245464750016037F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				11E3B57A24545EA10016037F /* DataManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E3B56824545DD00016037F /* ViewController.swift in Sources */,
 				11E3B56424545DD00016037F /* AppDelegate.swift in Sources */,
+				11E3B57B24545EA10016037F /* DataManager.swift in Sources */,
+				11E3B57924545E5A0016037F /* MainTableViewController.swift in Sources */,
+				11E3B584245481600016037F /* AddButtonViewController.swift in Sources */,
 				11E3B56624545DD00016037F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TPZ539LNM7;
-				INFOPLIST_FILE = JSONTestApp/Info.plist;
+				INFOPLIST_FILE = JSONTestApp/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Alexander.JSONTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TPZ539LNM7;
-				INFOPLIST_FILE = JSONTestApp/Info.plist;
+				INFOPLIST_FILE = JSONTestApp/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Alexander.JSONTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

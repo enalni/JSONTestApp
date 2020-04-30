@@ -13,6 +13,7 @@ class MainTableViewController: UITableViewController {
     var btcPriceMain: [DataManager]?
     
     private var btcPriceMainCounnt: [DataManager] = []
+    var gg = "s"
     
     private let jsonUrl = "https://financialmodelingprep.com/api/v3/quote/BTCUSD"
     

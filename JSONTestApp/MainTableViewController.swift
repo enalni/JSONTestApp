@@ -10,20 +10,11 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    var btcPriceMain: [DataManager]?
+    private var btcPriceMainCounnt: [AddButtonViewController] = []
     
-    private var btcPriceMainCounnt: [DataManager] = []
-    var gg = "s"
-    
-    private let jsonUrl = "https://financialmodelingprep.com/api/v3/quote/BTCUSD"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        AddButtonViewController.shared.fetchBTCprice(from: jsonUrl) { (btcPriceAdd) in
-            self.btcPriceMain = btcPriceAdd
-            print(self.btcPriceMain)
-        }
-        
     }
     
     // MARK: - Table view data source
